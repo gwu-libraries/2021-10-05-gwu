@@ -92,7 +92,14 @@ workshop is only open to people from a particular institution.
 {% if site.carpentry == "swc" %}
 {% include swc/who.html %}
 {% elsif site.carpentry == "dc" %}
-{% include dc/who.html %}
+<p id="who-can-attend">
+    <strong>Who can attend?:</strong>
+  This course is for GWU graduate students, faculty, and other researchers. Advanced undergraduates are also welcome. (Affiliates of CTSI are also invited.).
+  <strong>
+    You don't need to have any previous knowledge of the tools that will be presented at the workshop.
+  </strong>
+  However, you MUST have GWorld tap access to Gelman Library in order to attend.  Please let us know at least 3 days in advance if we need to register you as a guest.
+</p>
 {% elsif site.carpentry == "lc" %}
 {% include lc/who.html %}
 {% endif %}
